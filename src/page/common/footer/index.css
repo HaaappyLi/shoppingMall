@@ -1,0 +1,22 @@
+/*
+* @Author: 何佩莉
+* @Date:   2017-12-20 12:59:26
+* @Last Modified by:   何佩莉
+* @Last Modified time: 2017-12-20 13:05:14
+*/
+.footer{
+	padding-bottom: 10px;
+}
+.links{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link{
+	padding: 0 10px;
+}
+.copyright{
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
