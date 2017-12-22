@@ -2,7 +2,7 @@
 * @Author: 何佩莉
 * @Date:   2017-12-19 17:18:58
 * @Last Modified by:   何佩莉
-* @Last Modified time: 2017-12-20 13:08:06
+* @Last Modified time: 2017-12-21 20:08:45
 */
 require('./index.css');
 var _mm = require('util/mm.js');
@@ -24,7 +24,7 @@ var nav = {
 		});
 		//注册点击事件
 		$('.js-register').click(function() {
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		//退出点击事件
 		$('.js-logout').click(function() {

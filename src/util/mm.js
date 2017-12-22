@@ -26,15 +26,15 @@ var _mm = {
 					typeof param.error === 'function' && param.error(res.msg);
 				}
 			},
-			error: function(err) {
-				typeof param.error === 'function' && param.error(res.statusText);
+			error: function(error) {
+				typeof param.error === 'function' && param.error(error.statusText);
 			}
 		});
 	},
 	//统一登录处理
 	doLogin: function() {
 		//登录以后调回原路径，完全编码
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	//获取服务器地址
 	getServerURL: function(path) {
@@ -42,7 +42,7 @@ var _mm = {
 	},
 
 	//获取url参数
-	 getUrlParam: function(name) {
+	getUrlParam: function(name) {
         var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
         var result = window.location.search.substr(1).match(reg);
         return result ? decodeURIComponent(result[2]) : null;
