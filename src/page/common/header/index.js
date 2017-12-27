@@ -2,7 +2,7 @@
 * @Author: 何佩莉
 * @Date:   2017-12-20 13:11:26
 * @Last Modified by:   何佩莉
-* @Last Modified time: 2017-12-20 19:14:32
+* @Last Modified time: 2017-12-23 20:35:08
 */
 require('./index.css');
 var _mm = require('util/mm.js');
@@ -11,9 +11,10 @@ var _mm = require('util/mm.js');
 var header = {
 	init: function(){
 		this.bindEvent();
+		this.onLoad();
 	},
 	//内容回填
-	onload : function() {
+	onLoad : function() {
 		var keyword = _mm.getUrlParam('keyword');
 		//keyword存在，则回填
 		if(keyword) {
