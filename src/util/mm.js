@@ -37,7 +37,7 @@ var _mm = {
 		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	//获取服务器地址
-	getServerURL: function(path) {
+	getServerUrl: function(path) {
 		return conf.serverHost + path;
 	},
 

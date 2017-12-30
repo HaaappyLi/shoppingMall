@@ -2,7 +2,7 @@
 * @Author: 何佩莉
 * @Date:   2017-12-26 21:28:11
 * @Last Modified by:   何佩莉
-* @Last Modified time: 2017-12-27 12:43:10
+* @Last Modified time: 2017-12-28 15:09:44
 */
 require('./index.css');
 require('page/common/nav/index.js');
@@ -61,7 +61,6 @@ var page = {
                 _mm.errorTips(errMsg);
             });
         });
-
 	},
 	//加载商品详情数据
 	loadDetail: function() {
